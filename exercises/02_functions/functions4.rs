@@ -3,13 +3,16 @@
 // Don't worry about the function bodies themselves, we are only interested in
 // the signatures for now.
 
-fn is_even(num: i64) -> bool {
-    num % 2 == 0
+fn is_even(num: i64) -> bool 
+{
+    num % 2 == 0        //Personal Note: Rust doesnt need return statement or can be avoided at basic level, forther code can clarify it better for me
 }
 
 // TODO: Fix the function signature.
-fn sale_price(price: i64) -> {
-    if is_even(price) {
+fn sale_price(price: i64) -> i64
+{
+    if is_even(price) 
+    {
         price - 10
     } else {
         price - 3
